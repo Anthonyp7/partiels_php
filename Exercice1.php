@@ -24,21 +24,30 @@ multiplication(5);
 
 ## QUESTION B ##
 
-$table = 0;
-$compteur = 0;
-$resultat = 0;
-$i = 0;
- 
-function multiplication2($table){
-    for($i = 0; $i <= 10; $i ++){
-        
+function multiplication2(){
+
+    $resultat = 0;
+    $i = 0;
+    $nombre = 1;
+
+    for ($compteur=0; $compteur < 10; $compteur++){
+
+        echo "<br><br> Table de $nombre : <br><br>";
+        while($i <= 10){
+            
+            $resultat = $nombre * $i;
+            echo "$nombre * $i = $resultat <br>";
+            $i += 1;
+        }
+
+        $i = 0;
+        $nombre += 1;
 
     }
-    while($compteur < 10){
-        $compteur += 1;
-        $resultat = $compteur * $table;
-        echo"$compteur * $table = $resultat";
-    }
-
-    
 }
+
+multiplication2()
+
+
+
+?>
