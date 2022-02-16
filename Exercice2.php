@@ -3,29 +3,17 @@
 
 
 function somme($nombre){
-    $i = $nombre;
-    $compteur = 0;
-    $resultat = 0;
 
-    while($compteur >= $i)
+    while($nombre >= 0)
     {
-    
-        $resultat = $nombre + somme($nombre - 1);
-        $compteur += 1;
-        
+        if ($nombre == 0)    
+            return 0;
+        return ($nombre + somme ($nombre -1));
     }
-    echo"La somme de tous les entiers précédents l'entier choisi est $resultat";
 
-    // for($compteur = 0; $compteur <= $nombre; $compteur ++)
-    // {
-    //     $resultat += 1;
-    // }
-
-//     while($i <= $nombre)
-//     {
-        
-//     } 
+    echo"Veuillez sélectionné un nombre positif";    
+    
 }
 
 
-somme(5);
+echo somme(3);
