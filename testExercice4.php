@@ -16,15 +16,13 @@
 
     
 
-    if ($_POST['recherche'] == "anthony.perozeni777@gmail.com" and $_POST['mdp'] == "introuvable")
+    if ($_POST['recherche'] == "Perozeni")
     {
         ?>
         
 
             
             
-
-        <button>Supprimer</button>
         <?php
         
 
